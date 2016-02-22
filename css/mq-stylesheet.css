@@ -1,0 +1,563 @@
+/*MEDIA QUERIES*/
+
+@media (max-width: 1280px) {
+	
+	/*HEADER*/
+
+	.diamond {
+		left: 32%;
+	}
+
+	/*PORTFOLIO*/
+
+	img.diamondIcon4 {
+	  left: 38%;
+	}
+
+	aside {
+		padding-top: 1.4rem;
+	}
+}
+
+@media (max-width: 1170px) {
+	
+	/*HEADER*/
+
+	h2.tagline {
+	    margin-left: 58rem;
+	}
+
+	/*ABOUT*/
+
+	.diamond2 {
+		width: 46%;
+	}
+
+	/*PORTFOLIO*/
+
+	aside {
+		padding: 0.3rem 0;
+	}
+
+	img.diamondIcon4 {
+	  left: 37%;
+	}
+
+	
+}
+
+@media (max-width: 940px) {
+	
+	/*GLOBAL*/
+	p {
+	  font-size: 1.5rem;
+	  line-height: 1.6;
+	}
+
+	/*HEADER*/
+
+	.fa:hover, .devicon:hover {
+		color: #6a9587;
+	}
+
+	h1 {
+		font-size: 7rem;
+		letter-spacing: 20px;
+		padding-top: 12rem;
+	}
+
+	h1::after {
+		left: 36%;
+	}
+
+	h2.tagline {
+		font-size: 1.8rem;
+		margin-left: 51%;
+	}
+
+	.diamond {
+		left: 25%;
+	}
+
+	nav ul {
+		margin-top: 14rem;
+	}
+
+	/*ABOUT SECTION*/
+
+	.aboutMe {
+	  padding: 10rem 0 15rem 0;
+	 }
+
+	.headShot {
+    width: calc(40% - 7rem);
+    margin-left: 7rem;
+	}
+
+	.diamond2 {
+	  width: 48%;
+	  height: 440px;
+	}
+
+	.rotate {
+		margin: 0 0 6rem 0;
+	}
+
+	h2.styled {
+	  padding: 1.5rem 0;
+	}
+
+	h2.styled::after {
+	  width: 12%;
+	  bottom: 1rem;
+	  left: 35%;
+	}
+
+	img.diamondIcon2 {
+	    top: 28%;
+	    left: 26%;
+	}
+
+	.diamond2 h3 {
+	  font-size: 3rem;
+	  margin-top: 1rem;
+	}
+
+	.diamond2 p {
+	  padding: 2rem 3rem;
+	}
+
+	/*PORTFOLIO*/
+
+	.myWork {
+		padding-top: 0;
+	}
+
+	.myWork h3:not(h3.skill), .contact h3 {
+	  margin: 7.5rem 0 3rem 0;
+	}
+
+	img.diamondIcon3 {
+	  display: none;
+	}
+
+	h3.skill {
+		font-size: 3rem;
+	}
+
+	aside {
+		padding-bottom: 3.9rem;
+	}
+
+	aside ul li {
+	  padding: 1.05rem 0;
+	}
+
+	/*CONTACT*/
+
+	.contactMe {
+	  padding-top: 0;
+	}
+
+	img.diamondIcon4 {
+	  display: none;
+	}
+
+	.location {
+	  padding: 5rem;
+	  margin-left: 1.6rem;
+	  margin-right: 0.6rem;
+	}
+
+	.location .label {
+		font-size: 1.7rem;
+	}
+
+	.inside p{
+	  font-size: 1.6rem;
+	}
+
+	form {
+	  text-align: center;
+	  padding: 5.5rem 0 3rem 0;
+	}
+
+	form h4 {
+	  font-size: 1.8rem;
+	}
+
+	/*FOOTER*/
+
+	footer p {
+	  letter-spacing: 0.3rem;
+	  padding: 2.4rem 0 1rem 3rem;
+	}
+}
+
+@media (max-width: 768px) {
+	
+	/*HEADER*/
+	h1 {
+	  font-size: 6.5rem;
+	  padding-top: 16rem;
+	}
+
+	h2.tagline {
+	  margin-left: 38%;
+	  margin-top: 2.5rem;
+	  font-size: 2.5rem;
+	  color: #6b6b6b;
+	}
+
+	.diamond {
+	  left: 19.5%;
+	}
+
+	nav ul {
+	  margin: 12rem 0 0 -7rem;
+	}
+
+	/*ABOUT SECTION*/
+
+	.aboutMe {
+	  padding: 9rem 0;
+	}
+
+	.headShot {
+	  width: calc(45% - 5rem);
+	  margin-left: 5rem;
+	}
+
+	.diamond2 {
+	  width: 55%;
+	  height: auto;
+	  margin-left: -5rem;
+	  -webkit-transform: rotate(0deg);
+	  	-moz-transform: rotate(0deg);
+	  	-ms-transform: rotate(0deg);
+	  transform: rotate(0deg);
+	}
+
+	.rotate {
+		-webkit-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+		margin: 0;
+		padding: 1rem;
+	}
+
+	img.diamondIcon2 {
+	  left: 18%;
+	}
+
+	h2.styled::after {
+	  left: 32.5%;
+	}
+
+	/*PORTFOLIO*/
+	
+	.projectWrap {
+	  float: none;
+	  width: 100%;
+	}
+
+	.myWork h3, .contactMe h3 {
+		font-size: 2.5rem;
+	}
+
+	aside {
+		float: none;
+		width: 100%;
+		padding-bottom: 2rem;
+	}
+
+	aside ul li {
+		display: inline-block;
+		padding: 0 3rem;
+	}
+
+	.dev {
+	  font-size: 6.5rem;
+	}
+
+	/*CONTACT*/
+	.location {
+	  width: 52%;
+	  padding: 5rem 4rem 0 3rem;
+	  margin-right: 1.2rem;
+	  margin-left: 0;
+	}
+
+	.location p {
+	  text-align: center;
+	  margin-left: 0;
+	}
+
+	form {
+		width: 40%;
+	}
+
+	textarea {
+	  height: 22rem;
+	}
+}
+
+@media (max-width: 480px) {
+
+	/*HEADER*/
+
+	.fa, .devicon {
+    font-size: 2.2rem;
+    padding: 1rem 0.8rem;
+    margin-right: 0;
+	} 
+	
+
+	header {
+		height: auto;
+		padding: 0 0 3rem 0;
+	}
+
+	h1 {
+    font-size: 4rem;
+    padding-top: 13rem;
+    letter-spacing: 10px;
+	}
+
+	h1::after {
+    width: 35%;
+    left: 31%;
+	}
+
+	h2.tagline {
+    margin-left: 15%;
+    margin-top: 2.5rem;
+    font-size: 1.8rem;
+	}
+
+	.diamond {
+	  width: 250px;
+	  height: 250px;
+	  top: 18.5%;
+	  left: 22%;
+	}
+
+	nav, nav ul li {
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+	}
+
+	nav ul {
+	  margin: 15rem 0 0 0rem;
+	  padding: 3rem 0;
+	}
+
+	nav ul li {
+		padding: 0 1.3rem;
+	}
+
+	nav ul li a {
+		font-size: 1.6rem;
+	}
+
+	img.diamondIcon {
+	  right: 83%;
+	  width: 2.5rem;
+	  height: 2.5rem;
+	}
+
+	/*ABOUT SECTION*/
+	.aboutMe {
+	  padding: 9rem 0 3rem 0;
+	}
+
+	.headShot {
+	  width: 75%;
+	  float: none;
+	  margin: 0 auto;
+	}
+
+	.diamond2 {
+    width: 100%;
+    float: none;
+    height: auto;
+    margin: 0 auto;
+    padding: 1rem;
+    border: none;
+	}
+
+	img.diamondIcon2 {
+	  left: 27%;
+	}
+
+	h2.styled::after {
+	  left: 36%;
+	}
+
+	.diamond2 p {
+	  padding: 2rem;
+	}
+
+	/*PORTFOLIO*/
+	
+	.projects {
+	  float: none;
+	  width: 80%;
+	  margin: 0 auto;
+	  padding-top: 4rem;
+	}
+
+	.myWork h3, .contactMe h3 {
+		margin-bottom: 3rem;
+	}
+
+	h3.skill {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	aside ul li {
+	  padding: 0 4rem;
+	}
+
+	.dev {
+		font-size: 5.5rem;
+	}
+
+	/*CONTACT*/
+	.bgImage {
+	  background-position: 17% 50%;
+	}
+
+	.location {
+	  width: 90%;
+	  float: none;
+	  margin: 0 auto;
+	  padding: 2rem;
+	  text-align: center;
+	}
+
+	form {
+		float: none;
+		width: 80%;
+		margin: 0 auto;
+		padding-top: 1rem;
+	}
+
+	form h4 {
+		text-shadow: 1px 1px 3px #333333;
+	}
+
+	/*FOOTER*/
+	footer p {
+		width: 100%;
+		text-align: center;
+		padding: 2.4rem 0 0 0;
+		font-size: 1.2rem;
+	}
+
+	footer .socialIcons2 {
+	  text-align: center;
+	  padding: 0;
+	}
+}
+
+@media (max-width: 375px) {
+	/*HEADER*/
+	.diamond {
+	  width: 225px;
+	  height: 225px;
+	  left: 18.5%;
+	}
+
+	h1::after {
+	  width: 25%;
+	  left: 44%;
+	}
+
+	h2.tagline {
+	  margin-left: 6%;
+	}
+
+	nav ul {
+	  margin: 7rem 0 0 0;
+	}
+
+	nav ul li {
+		padding: 1rem 0;
+	}
+
+	img.diamondIcon {
+	  display: none;
+	}
+
+	h2.styled::after {
+	  left: 32%;
+	}
+
+	.diamond2 p {
+	  padding: 1.5rem;
+	}
+
+	aside ul li {
+	  padding: 0 2.5rem;
+	}
+}
+
+@media (max-width: 320px) {
+	/*HEADER*/
+
+	.diamond {
+    width: 200px;
+    height: 200px;
+    left: 17%;
+	}
+
+	h1 {
+	  padding-top: 10rem;
+	}
+
+	h1::after {
+	  left: 37%;
+	}
+
+	h2.tagline {
+	    margin-left: 4%;
+	    font-size: 1.5rem;
+	}
+
+	/*ABOUT SECTION*/
+
+	h2.styled::after {
+    width: 15%;
+	}
+
+	.diamond2 p {
+	  padding: 1rem;
+	}
+
+	/*PORTFOLIO*/
+	.myWork h3, .contact h3 {
+	  margin: 5rem 0 3rem 0;
+	}
+
+	.projects {
+    width: 85%;
+    padding-top: 2rem;
+	}
+
+	img.diamondIcon3 {
+	  left: 13%;
+	}
+
+	h3.skill {
+		margin: 0;
+	}
+
+	aside ul li {
+	    padding: 0.5rem 1.7rem;
+	}
+}

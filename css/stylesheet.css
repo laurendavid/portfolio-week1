@@ -1,0 +1,560 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* GLOBAL STYLES */
+
+/* Colour Scheme
+beige: #DCD5C5
+lightBeige: #dcd5c5;
+peach: #e7ac8c
+lightPeach: #efcbb7;
+mintGreen: #cbdad5 / rgb(225,233,230)
+spearmintGreen: #6a9587
+greyGreen: #a2b5af;
+white: #f4f4f4
+backgroundWhite: #ededed
+black: #272526 / rgb(39,37,38)
+lightGrey: #6b6b6b
+reallyLightGrey: #9e9e9e;
+hoverGrey: #c9c9c9
+darkGrey: #333333
+*/
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #ededed;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, a {
+	text-transform: uppercase;
+}
+
+h3 {
+	font-family: 'Poiret One', 'Josefin Sans', cursive;
+	font-size: 3rem;
+	margin-top: 2.5rem;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	font-size: 1.6rem;
+}
+
+h1::after, h2::after, a::after {
+	display: block;
+	content: "";
+	position: absolute;
+}
+
+p {
+	font-size: 1.6rem;
+	line-height: 1.7;
+}
+
+/*HEADER*/
+
+header {
+	max-width: 100%;
+	height: 100vh;
+	padding-bottom;
+	background-image: url("../images/foggy.jpg");
+	background-repeat: no-repeat;
+	background-position: 2% 50%;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/*LinkedIn, Twitter, Github, Instagram*/
+.socialIcons {
+	padding: 2rem 2rem 0 2rem;
+	text-align: right;
+}
+
+.fa, .devicon {
+	font-size: 2.5rem;
+	color: #000000;
+	padding: 1rem;
+	margin-right: 0.5rem;
+} 
+
+.fa:hover, .devicon:hover {
+	color: #6b6b6b;
+}
+
+/*Content wrapper*/
+.wrapper {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: 'Poiret One', cursive;
+	font-size: 8rem;
+	color: #272727;
+	letter-spacing: 20px;
+	text-shadow: 2px 2px 2px #efcbb7;
+	text-align: center;
+	position: relative;
+	padding-top: 12rem;
+	z-index: 1;
+}
+
+/*Line after my name*/
+h1::after {
+	width: 12%;
+	height: 5px;
+	background-color: #e7ac8c;
+	bottom: -5%;
+	left: 36.5%;
+}
+
+h2.tagline {
+	font-size: 2.1rem;
+	letter-spacing: 0.5rem;
+	color: #272727;
+	margin-left: 64.5rem;
+	position: relative;
+	z-index: 2;
+}
+
+.diamond {
+	width: 450px;
+	height: 450px;
+	border: 1.5rem solid #a2b5af;
+	background-color: rgba(225,233,230,0.5);
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+	position: absolute;
+	top: 19%;
+	left: 35%;
+}
+
+nav {
+	width: 100%;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+}
+
+nav ul {
+	width: 100%;
+	text-align: center;
+	margin: 11rem 0 0 -6rem;
+	padding-top: 5rem;
+}
+
+nav ul li {
+	display: inline-block;
+	text-transform: uppercase;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+}
+
+nav ul li a {
+	font-size: 1.8rem;
+	padding: 1rem;
+	color: #272727;
+	position: relative;
+}
+
+nav ul li a::after {
+	display: block;
+	content: "";
+	width: 35%;
+	height: 2px;
+	background-color: #799f93;
+	position: absolute;
+	bottom: 8px;
+	right: 12%;
+}
+
+nav ul li:hover a {
+	color: #272727;
+	text-shadow: 1px 1px 1px #e7ac8c;
+}
+
+img.diamondIcon {
+	width: 3rem;
+	height: 3rem;
+	color: #272526;
+	position: absolute;
+	top: 1%;
+	right: 100%;
+}
+
+/*MAIN SECTION*/
+
+/*ABOUT*/
+
+.aboutMe {
+	width: 100%;
+	padding: 20rem 0 25rem 0;
+	background-image: url('../images/stardust.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.headShot {
+	width: calc(40% - 13rem);
+	margin-left: 15rem;
+	float: left;
+	box-shadow: inset 0 0 10px 10px #D6D6D6;
+}
+
+.headShot img {
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.diamond2 {
+	float: left;
+	width: 41%;
+	height: 525px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+	margin: 5.5rem 0 0 -4.5rem;
+	padding: 1.75rem 1.5rem 3.5rem 1.5rem;
+	border: 1.5rem solid #ccc2a9;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+}
+
+.rotate {
+	width: 100%;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+	margin-right:  2rem;
+}
+
+h2.styled {
+	font-size: 1.6rem;
+	color: #272727;
+	padding: 2.5rem 0;
+	letter-spacing: 0.4rem;
+	position: relative;
+}
+
+h2.styled::after {
+	width: 8%;
+	height: 0.2rem;
+	background-color: #e7ac8c;
+	bottom: 2rem;
+	left: 37.5%;
+}
+
+/*diamond icon - changing position*/
+img.diamondIcon2 {
+	top: 37%;
+	left: 29%;
+}
+
+.diamond2 h3 {
+	font-size: 4rem;	
+	margin-top: 1rem;
+}
+
+.diamond2 span {
+	font-size: 2.2rem;
+	color: #6a9587;
+}
+
+.diamond2 p {
+	padding: 2.5rem 5rem;
+}
+
+/*Let's Talk The Web text*/
+a.talk {
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	color: #e7ac8c;
+	font-weight: bold;
+}
+
+a.talk:hover {
+	color: #6a9587;
+}
+
+a.socialButton {
+	font-size: 2rem;
+	padding: 10px;
+	text-transform: uppercase;
+	color: #6a9587;
+	position: relative;
+}
+
+a.socialButton:hover {
+	color: #272727;
+	text-shadow: 2px 2px 2px #efcbb7;
+}
+
+a.socialButton:hover::after {
+	width: 35%;
+	height: 0.2rem;
+	bottom: 0.7rem;
+	left: 10%;
+	background-color: #e7ac8c;
+} /* End of about section */
+
+/*PORTFOLIO*/
+
+.myWork {
+	width: 100%;
+	padding-top: 4rem;
+	text-align: center;
+}
+
+.myWork h3 {
+	margin: 7.5rem 0 5rem 0;
+	position: relative;
+}
+
+img.diamondIcon3, img.diamondIcon4 {
+	width: 4.5rem;
+	height: 4.5rem;
+	position: absolute;
+	top: 0;
+}
+
+img.diamondIcon3 {
+	left: 39%;
+}
+
+.projectWrap {
+	float: left;
+	width: 80%;
+	background-color: #9e9e9e;
+	padding: 1.5rem 0 1.2rem 0;
+}
+
+.projects {
+	float: left;
+	width: calc(50% - 7rem);
+	margin: 3.5rem;
+	text-align: center;
+}
+
+.projects img {
+	width: 100%;
+	display: block;
+	filter: grayscale(95%);
+	-webkit-filter: grayscale(95%);
+}
+
+.projects img:hover {
+	filter: none;
+	-webkit-filter: none;
+}
+
+.project1 {
+	margin-left: 5.2rem;
+}
+
+.project2 {
+	margin-left: 0;
+}
+
+.projects h3 {
+	font-size: 2.5rem;
+	color: #f4f4f4;
+	letter-spacing: 0.4rem;
+	margin: 2.5rem 0;
+}
+
+aside {
+	float: left;
+	width: 20%;
+	background-color: #dcd5c5;
+	padding: 2.5rem 0 5.6rem 0;
+}
+
+aside ul {
+  padding-bottom: 2rem;
+}
+
+h3.skill {
+	letter-spacing: 0.4rem;
+	margin: 0;
+	padding: 2rem 0;
+}
+
+/*devicons*/
+aside ul li {
+	display: block;
+	padding: 2.75rem 0;
+}
+
+.dev {
+	font-size: 7.5rem;
+	color: #6b6b6b;
+} /* End of portfolio section. End of main section */
+
+/*CONTACT*/
+
+.contactMe {
+	width: 100%;
+	padding-top: 4rem;
+}
+
+.contactMe h3 {
+	font-size: 3rem;	
+	margin: 7.5rem 0 5rem 0;
+	position: relative;
+}
+
+img.diamondIcon4 {
+	left: 40%;
+}
+
+/*Keyboard image*/
+.bgImage {
+	padding: 3.5rem 0 3rem 0;
+	background-image: url('../images/keyboard.jpg');
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+}
+
+/*Contact info*/
+.location {
+	float: left;
+	width: 55%;
+	padding: 5rem;
+	margin-right: 5rem;
+}
+
+.location p {
+	color: #f4f4f4;
+	line-height: 2;
+	padding-bottom: 1rem;
+	margin-left: 2rem;
+}
+
+.location .label {
+	font-weight: bold;
+	font-size: 1.8rem;
+	letter-spacing: 0.4rem;
+	text-transform: uppercase;
+	margin-left: 0;
+	color: #a2b5af;
+	text-shadow: 1px 1px 1px #000000;
+}
+
+.location a {
+	color: #f4f4f4;
+	text-transform: lowercase;
+	padding: 1rem 1rem 1rem 0;
+}
+
+.location a:hover {
+	color: #e7ac8c;
+}
+
+.inside {
+	border-top: 2px solid #e7ac8c;
+	padding-top: 2rem;
+	margin-top: 1.5rem;
+}
+
+.inside p {
+	line-height: 2;
+	margin-left: 0;
+	color: #f4f4f4;
+}
+
+/*Contact form*/
+form {
+	float: left;
+	width: 35%;
+	padding: 6rem 0 4rem 0;
+}
+
+form h4 {
+	font-size: 1.8rem;
+	color: #e7ac8c;
+	text-shadow: 1px 1px 1px #000000;
+	letter-spacing: 0.3rem;
+	padding-bottom: 10px;
+}
+
+input, textarea {
+	display: block;
+	width: 100%;
+	height: 4rem;
+	font-size: 1.6rem;
+	margin-bottom: 2rem;
+	padding: 1rem;
+	text-transform: uppercase;
+	border: 0.1rem solid #272526;
+	color: #272526;
+	outline: 0;
+}
+
+textarea {
+	height: 15rem;
+}
+
+input:focus, textarea:focus {
+	box-shadow: inset 0 0 2px 2px #6A9B9E;
+}
+
+/*To correct form colour autofill in Chrome*/
+input:-webkit-autofill, textarea:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 1000px #f4f4f4 inset;
+	-webkit-text-fill-color: #333333;
+}
+
+input[type="submit"] {
+	background-color: #efcbb7;;
+	color: #272526;
+	border: 0.1rem solid #efcbb7;
+}
+
+input[type="submit"]:hover {
+	background-color: #cbdad5;
+	font-weight: bold;
+	border: 0.1rem solid #cbdad5;
+	border-radius: 0.2rem;
+}
+
+/*FOOTER*/
+
+footer {
+	max-width: 100%;
+	background-color: #cbdad5;
+}
+
+footer p {
+	font-size: 1.4rem;
+	float: left;
+	text-transform: uppercase;
+	letter-spacing: 0.5rem;
+	padding: 2.4rem 0 1rem 62rem;
+}
+
+footer .socialIcons2 {
+	padding: 1.2rem 2rem 1.3rem 1rem;
+}
